@@ -72,6 +72,7 @@ header img {
     filter: drop-shadow(0px 0px 5px #0000005d);
 }
 
+
 .header-text {
     display: flex;
     flex-direction: column;
@@ -129,16 +130,15 @@ main h2 {
     margin: 50px 0;
 }
 
-#produto-1{
-    margin-right: 300px;
-}
+
 
 #produto-2 {
     display: flex;
     text-align: end;
     align-items: end;
-    margin-left: 300px;
 }
+
+
 
 .produto-text {
     display: flex;
@@ -212,7 +212,7 @@ section h2 {
 }
 
 .section-text {
-    width: 50%;
+    width: 80%;
 }
 
 .section-text p {
@@ -226,4 +226,110 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/* Responsive */
+
+@media all and (min-width: 1200px) {
+    #produto-1{
+        margin-right: 300px;
+    }
+    #produto-2 {
+        margin-left: 300px;
+    }
+    .section-text {
+        width: 60%;
+    }    
+}
+
+
+
+@media all and (max-width:980px) {
+    header img {
+        width: 250px;
+    }
+    .produto img {
+        width: 300px;
+        height: 250px;
+    }
+    nav a h1 {
+        display: none;
+    }
+    .nav-links {
+        margin: 0
+    }
+
+    main h2 {
+        margin-top: 50px
+    }
+    
+}
+
+@media all and (max-width: 800px) {
+    header h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .header-text {
+        align-items: center;
+    }   
+
+    header img {
+        display: none;
+    }
+
+    .produto {
+        flex-direction: column;
+    }
+    
+    .produto img {
+        width: 400px;
+        height: 300px;
+    }
+
+    #carro {
+        flex-direction: column-reverse;
+    }
+
+    #produto-2 {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+@media  all and (max-width: 425px) {
+    .nav-links {
+        gap: 10px;
+        margin-right: 20px;
+    }
+
+    nav #moon{
+        display: none;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+
+    main h2 {
+        font-size: 2rem;
+    }
+    .produto img {
+        width: 300px;
+        height: 250px;
+        align-self: center;
+    }
+    
+    #produto-1, #produto-2 {
+        align-items: center;
+        text-align: center;
+    }
+
+    .produto-text{
+        width: 80%;
+        align-self: center;
+    }
 }
