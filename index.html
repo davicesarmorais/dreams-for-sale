@@ -1,31 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="imgs/DreamsForSaleIcon.png">
-    <title>Dreams for Sale</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            display: flex;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-            background-color: #565264;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        h1 {
-            font-size: 4rem;
-            color: #d6cfcb;
-        }
-        
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" href="imgs/DreamsForSaleIcon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Dreams for Sale</title>
 </head>
 <body>
-    <h1>EM CONSTRUÇÃO</h1>
+    <nav>
+        <a href="" style="display: flex; gap: 10px; align-items: center;">
+            <span class="material-symbols-outlined">dark_mode</span> 
+            <h1>Dreams for Sale</h1>
+        </a>
+        <div class="nav-links">
+            <a href="./pages/produtos.html">Produtos</a>
+            <a href="#Sobre">Sobre</a>
+            <a href="">Contato</a>
+        </div>
+        <a href=""><span class="material-symbols-outlined">shopping_cart</span></a>
+    </nav>
+    <header>
+        <div class="header-text">
+            <h2>Onde seu sonho se torna realidade</h2>
+            <a href="#Produtos">Visualizar sonhos</a>
+        </div>
+        <img src="imgs/DreamsForSaleIcon (400x400).png" alt="">
+    </header>
+    <main>
+        <h2>Sonhos em liquidação</h2>
+        <hr size="1" style="color: #FFFDEC; width: 1150px;">
+        <div class="produtos" id="Produtos">
+            <div class="produto">
+                <img src="imgs/DreamSynth (400x400).png" alt="">
+                <div class="produto-text" id="produto-1">
+                    <h3>Dream Synth</h3>
+                    <span class="preco"><s>$799.99</s> <strong>$599.99</strong></span>
+                    <p>Um dispositivo que se conecta ao travesseiro e transforma sonhos em imagens digitais que podem ser revisitadas e editadas ao acordar.</p>
+                    <a href="">Adicionar ao carrinho</a>
+                </div>
+            </div>
+            <hr size="1" style="color: #FFFDEC">
+            <div class="produto">
+                <div class="produto-text" id="produto-2">
+                    <h3>Flying Car</h3>
+                    <span class="preco"><strong>$30,998.99</strong> <s>$34,999.99</s></span>
+                    <p>Um carro voador elegante com asas retráteis, propulsores elétricos silenciosos, e navegação autônoma.</p>
+                    <a href="">Adicionar ao carrinho</a>
+                </div>
+                <img src="imgs/CarroVoador (400x400).png" alt="">
+            </div>
+        </div>
+        <hr size="1" style="color: #FFFDEC; width: 1150px;">
+        <a href="./pages/produtos.html">Ver mais sonhos</a>
+    </main>
+    <section id="Sobre">
+        <div class="section-text">
+            <h2>Sobre nós</h1>
+            <p> <strong>Dreams for Sale</strong> é mais do que uma loja; é um portal para o imaginário, um espaço onde a realidade se mistura com a fantasia e onde o impossível se torna possível. Em um mundo saturado de produtos comuns, nós oferecemos algo verdadeiramente único: itens que ainda não existem, mas que vivem em seus sonhos e imaginações.</p>
+            <br>
+            <p>Nossa missão é transformar seus desejos mais profundos em realidade, oferecendo uma coleção de produtos que desafiam as convenções e despertam a criatividade. Cada item em nossa loja é uma promessa de inovação, uma peça do futuro feita sob medida para você.</p>
+            <br>
+            <p>Explore nossas categorias e deixe-se levar por um universo de possibilidades infinitas. Na Dreams for Sale, cada visita é uma nova aventura e cada compra, um passo em direção ao extraordinário.</p>
+            <br><br>
+            <p><strong>Bem-vindo ao futuro. Bem-vindo ao seu sonho.</strong></p>    
+        </div>
+    </section>
+    <footer>
+        jaja vou fazer o footer
+    </footer>
 </body>
 </html>
