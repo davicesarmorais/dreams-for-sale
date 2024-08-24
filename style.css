@@ -14,14 +14,13 @@ body {
 
 nav {
     display: flex;
-    background-color: #453555;
+    background-color: #41304f;
     justify-content: space-between;
     padding: 20px 30px;
     margin: 20px;
     border-radius: 10px;
     filter: drop-shadow(0px 4px 2px #00000025);
     background-image: url(imgs/background\(1920\).jpg);
-    position: sticky;
 }
 
 nav a{
@@ -52,7 +51,7 @@ nav a{
 
 header {
     display: flex;
-    background-color: #453555;
+    background-color: #41304f;
     margin: 20px;
     border-radius: 10px;
     filter: drop-shadow(0px 4px 2px #00000025);
@@ -136,13 +135,11 @@ main h2 {
 }
 
 
-
 #produto-2 {
     display: flex;
     text-align: end;
     align-items: end;
 }
-
 
 
 .produto-text {
@@ -203,13 +200,13 @@ main a:hover {
 section {
     margin: 100px 20px 20px 20px;
     padding-bottom: 90px;
-    background-color: #453555;
+    background-color: #41304f;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     filter: drop-shadow(0px 0px 4px #00000025);
-    box-shadow: 0 0 10rem #0000008a inset;
+    /* box-shadow: 0 0 10rem #0000008a inset; */
 }
 
 section h2 {
@@ -235,7 +232,7 @@ footer {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    margin: 50px;
+    margin: 80px 0 20px;
 }
 
 .footer-icons {
@@ -259,7 +256,7 @@ footer {
 }
 
 .footer-icons a:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     filter: drop-shadow(0px 0px 5px #fff59783);
     background-color: #FFFDEC;
     color: #33273F;
@@ -271,42 +268,8 @@ footer p {
     text-align: center;
     margin-bottom: 5px;
 }
-/* Produtos */
-.s-produto-lista img{
-    width: 200px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
 
-}
-.s-produto-lista{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    border: 1px solid #FFFDEC;
-    border-radius: 10px;
-    padding: 10px;
-    width: fit-content;
-}
-.text-produto{
-    text-align: center;
-}
-.text-produto h2, .text-produto h3{
-    font-size: 1.0rem;
-    margin-bottom: 5px;
-}
-.text-produto p{
-    font-size: 0.7rem;
-    margin-bottom: 10px;
-}
-.s-produto-lista a{
-    border: 1px solid #FFFDEC;
-    border-radius: 10px ;
-    padding: 10px 20px;
-    color: #FFFDEC;
-    text-decoration: none;
-}
+
 /* Responsive */
 
 @media all and (min-width: 1200px) {
