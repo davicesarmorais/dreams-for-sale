@@ -271,7 +271,42 @@ footer p {
     text-align: center;
     margin-bottom: 5px;
 }
+/* Produtos */
+.s-produto-lista img{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
 
+}
+.s-produto-lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #FFFDEC;
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+}
+.text-produto{
+    text-align: center;
+}
+.text-produto h2, .text-produto h3{
+    font-size: 1.0rem;
+    margin-bottom: 5px;
+}
+.text-produto p{
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+}
+.s-produto-lista a{
+    border: 1px solid #FFFDEC;
+    border-radius: 10px ;
+    padding: 10px 20px;
+    color: #FFFDEC;
+    text-decoration: none;
+}
 /* Responsive */
 
 @media all and (min-width: 1200px) {
