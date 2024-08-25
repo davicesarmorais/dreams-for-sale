@@ -106,13 +106,13 @@ header img {
 
 /* Main */
 
-main {
+.home-page {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.produto img {
+.home-page .produto img {
     width: 400px;
     height: 300px;
     border-radius: 10px;
@@ -120,7 +120,7 @@ main {
     filter: drop-shadow(0px 4px 2px #00000025);
 }
 
-main h2 {
+.home-page h2 {
     text-align: center;
     margin: 100px 0 20px 0; 
     font-size: 2.5rem;
@@ -128,14 +128,14 @@ main h2 {
 }
 
 
-.produto {
+.home-page .produto {
     display: flex;
     gap: 50px;
     margin: 50px 0;
 }
 
 
-#produto-2 {
+.home-page #produto-2 {
     display: flex;
     text-align: end;
     align-items: end;
@@ -150,11 +150,11 @@ main h2 {
     justify-content: center;
 }
 
-.produto-text .preco {
+.home-page .produto-text .preco {
     margin: 5px 0 10px 0;
 }
 
-.produto-text a {
+.home-page .produto-text .btn {
     margin-top: 30px;
     width: fit-content;
     padding: 10px 20px;
@@ -167,11 +167,11 @@ main h2 {
 
 }
 
-.produto-text h3 {
+.home-page .produto-text h3 {
     font-size: 2rem;
 }
 
-main > a {
+.home-page > .btn {
     background-color: #FFFDEC;
     width: fit-content;
     padding: 10px 50px;
@@ -180,15 +180,13 @@ main > a {
     color: #33273F;
     filter: drop-shadow(0px 4px 2px #00000025);
     margin-top: 30px;
-
-    
 }
 
-main a {
+.home-page .btn {
     transition: 0.3s ease;
 }
 
-main a:hover {
+.home-page .btn:hover {
     transform: scale(1.05);
     filter: drop-shadow(0px 0px 5px #fff59783);
     background-color: #FFFDEC;
@@ -197,9 +195,9 @@ main a:hover {
 
 /* About */
 
-section {
+#Sobre {
     margin: 100px 20px 20px 20px;
-    padding-bottom: 90px;
+    padding-bottom: 70px;
     background-color: #41304f;
     border-radius: 10px;
     display: flex;
@@ -209,20 +207,37 @@ section {
     /* box-shadow: 0 0 10rem #0000008a inset; */
 }
 
-section h2 {
-    padding: 40px;
+#Sobre h2 {
+    padding: 40px 0 20px 0;
     text-align: center;
     font-size: 2.5rem;
     filter: drop-shadow(0px 4px 2px #00000025);
 }
 
 .section-text {
-    width: 80%;
-
+    width: 70%;
 }
 
 .section-text p {
     font-weight: 300;
+    line-height: 24px;
+    color: #dfded0;
+    
+}
+.section-text strong{
+    font-weight: 400;
+    color: #FFFDEC;
+}
+
+.paragrafos {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+}
+
+.ending-text {
+    margin-top: 20px;
 }
 
 /* Footer */
@@ -280,7 +295,7 @@ footer p {
         margin-left: 300px;
     }
     .section-text {
-        width: 60%;
+        width: 50%;
     }    
 }
 

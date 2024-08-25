@@ -22,52 +22,66 @@
             <a href="#Sobre">Sobre</a>
             <a href="#Contato">Contato</a>
         </div>
-        <a href=""><span class="material-symbols-outlined">shopping_cart</span></a>
+        <a href="./pages/carrinho.html"><span class="material-symbols-outlined">shopping_cart</span></a>
     </nav>
     <header>
         <div class="header-text">
             <h2>Onde seu sonho se torna realidade</h2>
-            <a href="#Produtos">Visualizar sonhos</a>
+            <a href="./pages/produtos.html">Visualizar sonhos</a>
         </div>
         <img src="imgs/DreamsForSaleIcon (400x400).png" alt="">
     </header>
-    <main>
+    <main class="home-page">
         <h2>Sonhos em liquidação</h2>
         <div class="produtos" id="Produtos">
             <hr size="1" style="color: #FFFDEC;">
             <div class="produto">
-                <img src="imgs/DreamSynth (400x400).png" alt="">
+                <a href="./pages/product/dream-synth.html"><img src="imgs/DreamSynth (400x400).png" alt=""></a>
                 <div class="produto-text" id="produto-1">
                     <h3>Dream Synth</h3>
                     <span class="preco"><s>$799.99</s> <strong>$599.99</strong></span>
                     <p>Um dispositivo que se conecta ao travesseiro e transforma sonhos em imagens digitais que podem ser revisitadas e editadas ao acordar.</p>
-                    <a href="">Adicionar ao carrinho</a>
+                    <a class="btn" href="">Adicionar ao carrinho</a>
                 </div>
             </div>
             <hr size="1" style="color: #FFFDEC">
             <div class="produto" id="carro">
                 <div class="produto-text" id="produto-2">
                     <h3>Flying Car</h3>
-                    <span class="preco"><strong>$30,998.99</strong> <s>$34,999.99</s></span>
+                    <span class="preco"><strong>$44,999.99</strong> <s>$50,999.99</s></span>
                     <p>Um carro voador elegante com asas retráteis, propulsores elétricos silenciosos, e navegação autônoma.</p>
-                    <a href="">Adicionar ao carrinho</a>
+                    <a class="btn" href="">Adicionar ao carrinho</a>
                 </div>
-                <img src="imgs/CarroVoador (400x400).png" alt="">
+                <a href="./pages/product/flying-car.html"><img src="imgs/CarroVoador (400x400).png" alt=""></a>
             </div>
             <hr size="1" style="color: #FFFDEC;">
         </div>
-        <a href="./pages/produtos.html">Ver mais sonhos</a>
+        <a class="btn" href="./pages/produtos.html">Ver mais sonhos</a>
     </main>
     <section id="Sobre">
         <div class="section-text">
-            <h2>Sobre nós</h1>
-            <p> <strong>Dreams for Sale</strong> é mais do que uma loja; é um portal para o imaginário, um espaço onde a realidade se mistura com a fantasia e onde o impossível se torna possível. Em um mundo saturado de produtos comuns, nós oferecemos algo verdadeiramente único: itens que ainda não existem, mas que vivem em seus sonhos e imaginações.</p>
-            <br>
-            <p>Nossa missão é transformar seus desejos mais profundos em realidade, oferecendo uma coleção de produtos que desafiam as convenções e despertam a criatividade. Cada item em nossa loja é uma promessa de inovação, uma peça do futuro feita sob medida para você.</p>
-            <br>
-            <p>Explore nossas categorias e deixe-se levar por um universo de possibilidades infinitas. Na Dreams for Sale, cada visita é uma nova aventura e cada compra, um passo em direção ao extraordinário.</p>
-            <br><br><br>
-            <p><strong>Bem-vindo ao futuro. Bem-vindo ao seu sonho.</strong></p>
+            <h2>Nossa missão</h1>
+            <hr size="1" style="color: #FFFDEC; margin-bottom: 40px;">
+            <div class="paragrafos">
+                <p><strong><b>Dreams for Sale</b> é mais do que uma loja...</strong></p> 
+                
+                <p><strong>...é um portal para o imaginário</strong>, um espaço onde a realidade se mistura com a fantasia e <strong>onde o impossível se torna possível.</strong></p> 
+                
+                <p>Em um mundo saturado de produtos comuns, nós oferecemos algo <strong>verdadeiramente único: <br>Itens que ainda não existem, mas que vivem em seus sonhos e imaginações.</strong></p>
+                
+                <p>Nossa missão é <strong>transformar</strong> seus desejos mais profundos <strong>em realidade</strong>, oferecendo uma coleção de produtos que desafiam as convenções e despertam a <strong>criatividade</strong>. Cada item em nossa loja é uma promessa de <strong>inovação</strong>, uma peça do futuro feita sob medida para você.</p>
+                
+                <p>Explore nossas categorias e deixe-se levar por um universo de <strong>possibilidades infinitas</strong>. Na <strong><b>Dreams for Sale</b></strong>, cada visita é uma nova aventura e cada compra, um passo em direção ao <strong>extraordinário</strong>.</p>
+                
+                <hr size="1" style="color: #FFFDEC; ">
+                <p class="ending-text">
+                    <strong>Bem-vindo ao futuro.</strong><br>
+                    <strong style="display: flex; align-items: center; gap: 10px;">
+                        <span id="moon" class="material-symbols-outlined">dark_mode</span>
+                        <span>Bem-vindo ao seu sonho.</span>
+                    </strong>
+                </p>
+            </div>
         </div>
     </section>
     <footer id="Contato">
