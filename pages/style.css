@@ -149,9 +149,7 @@ footer p {
     .nav-links {
         margin: 0
     }
-
 }
-
 
 @media  all and (max-width: 425px) {
     .nav-links {
@@ -160,10 +158,7 @@ footer p {
 }
 
 @media  all and (max-width: 320px) {
-    nav #moon {
-        display: none;
-    }
-    .nav-links {
-        margin-right: 10px;
+    nav {
+        padding: 20px 10px;
     }
 }

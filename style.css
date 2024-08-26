@@ -288,10 +288,10 @@ footer p {
 /* Responsive */
 
 @media all and (min-width: 1200px) {
-    #produto-1{
+    .home-page #produto-1{
         margin-right: 300px;
     }
-    #produto-2 {
+    .home-page #produto-2 {
         margin-left: 300px;
     }
     .section-text {
@@ -305,7 +305,7 @@ footer p {
     header img {
         width: 250px;
     }
-    .produto img {
+    .home-page .produto img{
         width: 300px;
         height: 250px;
     }
@@ -316,7 +316,7 @@ footer p {
         margin: 0
     }
 
-    main h2 {
+    .home-page h2 {
         margin-top: 50px
     }
     
@@ -336,11 +336,11 @@ footer p {
         display: none;
     }
 
-    .produto {
+    .home-page .produto {
         flex-direction: column;
     }
     
-    .produto img {
+    .home-page .produto img {
         width: 400px;
         height: 300px;
     }
@@ -349,7 +349,7 @@ footer p {
         flex-direction: column-reverse;
     }
 
-    #produto-2 {
+    .home-page #produto-2 {
         align-items: flex-start;
         text-align: left;
     }
@@ -368,33 +368,28 @@ footer p {
         width: 100%;
     }
 
-
-
-    main h2 {
+    .home-page h2 {
         font-size: 2rem;
     }
-    .produto img {
+    .home-page .produto img {
         width: 300px;
         height: 250px;
         align-self: center;
     }
     
-    #produto-1, #produto-2 {
+    .home-page #produto-1, .home-page #produto-2 {
         align-items: center;
         text-align: center;
     }
 
-    .produto-text{
+    .home-page .produto-text{
         width: 80%;
         align-self: center;
     }
 }
 
 @media  all and (max-width: 320px) {
-    nav #moon {
-        display: none;
-    }
-    .nav-links {
-        margin-right: 10px;
+    nav {
+        padding: 20px 10px;
     }
 }
