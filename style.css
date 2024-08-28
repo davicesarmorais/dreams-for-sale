@@ -19,12 +19,13 @@ nav {
     padding: 20px 30px;
     margin: 20px;
     border-radius: 10px;
-    filter: drop-shadow(0px 4px 2px #00000025);
+    box-shadow: 
+        inset 0 1px 0 0 #ffffff0d, 
+        2px 2px 5px 1px #00000048;
     background-image: url(imgs/background\(1920\).jpg);
 }
 
 nav a{
-    filter: drop-shadow(0px 4px 2px #00000025);
     color: #FFFDEC;
     text-decoration: none;
     transition: all 0.2s ease;
@@ -54,7 +55,9 @@ header {
     background-color: #41304f;
     margin: 20px;
     border-radius: 10px;
-    filter: drop-shadow(0px 4px 2px #00000025);
+    box-shadow: 
+        inset 0 1px 0 0 #ffffff0d, 
+        2px 2px 5px 1px #00000048;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -66,14 +69,15 @@ header {
 header h2 {
     font-size: 3rem;
     width: 400px;
-    filter: drop-shadow(0px 4px 2px #00000025);
     text-align: end;
     line-height: 40px;
 }
 
 header img {
     border-radius: 100%;
-    filter: drop-shadow(0px 0px 5px #0000005d);
+    box-shadow: 
+        inset 0 1px 0 0 #ffffff0d, 
+        2px 2px 5px 1px #00000048;
 }
 
 
@@ -95,7 +99,9 @@ header img {
     border-radius: 10px;
     font-weight: bold;
     width: fit-content;
-    filter: drop-shadow(0px 4px 2px #00000025);
+    box-shadow: 
+        inset 0 1px 0 0 #ffffff0d, 
+        2px 2px 5px 1px #00000048;
     transition: 0.3s ease;
 }
 
@@ -117,14 +123,15 @@ header img {
     height: 300px;
     border-radius: 10px;
     object-fit: cover;
-    filter: drop-shadow(0px 4px 2px #00000025);
+    box-shadow: 
+        inset 0 1px 0 0 #ffffff0d, 
+        2px 2px 5px 1px #00000048;
 }
 
 .home-page h2 {
     text-align: center;
     margin: 100px 0 20px 0; 
     font-size: 2.5rem;
-    filter: drop-shadow(0px 4px 2px #00000025);
 }
 
 
@@ -160,7 +167,9 @@ header img {
     padding: 10px 20px;
     border-radius: 10px;
     text-decoration: none;
-    filter: drop-shadow(0px 4px 2px #00000025);
+    box-shadow: 
+        inset 0 1px 0 0 #ffffff0d, 
+        2px 2px 5px 1px #00000048;
     font-weight: normal;
     border: 1px solid #FFFDEC;
     color: #FFFDEC;
@@ -178,7 +187,9 @@ header img {
     border-radius: 10px;
     text-decoration: none;
     color: #33273F;
-    filter: drop-shadow(0px 4px 2px #00000025);
+    box-shadow: 
+        inset 0 1px 0 0 #ffffff0d, 
+        2px 2px 5px 1px #00000048;
     margin-top: 30px;
 }
 
@@ -203,15 +214,15 @@ header img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    filter: drop-shadow(0px 0px 4px #00000025);
-    /* box-shadow: 0 0 10rem #0000008a inset; */
+    box-shadow: 
+        inset 0 1px 0 0 #ffffff0d, 
+        2px 2px 5px 1px #00000048;
 }
 
 #Sobre h2 {
     padding: 40px 0 20px 0;
     text-align: center;
     font-size: 2.5rem;
-    filter: drop-shadow(0px 4px 2px #00000025);
 }
 
 .section-text {
@@ -253,7 +264,6 @@ footer {
 .footer-icons {
     display: flex;
     gap: 20px;
-    filter: drop-shadow(0px 4px 2px #00000025);
     font-size: 0.8rem;
 }
 
@@ -268,6 +278,9 @@ footer {
     transition: 0.3s ease;
     color: #FFFDEC;
     text-decoration: none;
+    box-shadow: 
+        inset 0 1px 0 0 #ffffff0d, 
+        2px 2px 5px 1px #00000048;
 }
 
 .footer-icons a:hover {

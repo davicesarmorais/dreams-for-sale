@@ -17,12 +17,13 @@ nav {
     padding: 20px 30px;
     margin: 20px;
     border-radius: 10px;
-    filter: drop-shadow(0px 4px 2px #00000025);
+    box-shadow: 
+        inset 0 1px 0 0 #ffffff0d, 
+        2px 2px 5px 1px #00000048;
     background-image: url(../imgs/background\(1920\).jpg);
 }
 
 nav a{
-    filter: drop-shadow(0px 4px 2px #00000025);
     color: #FFFDEC;
     text-decoration: none;
     transition: all 0.2s ease;
@@ -48,16 +49,28 @@ nav a{
 /* Produtos */
 .produto-page {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 50px 0;
 
 }
 
+.produtos > h2 {
+    font-size: 2.5rem;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.produtos > hr {
+    color: #FFFDEC;
+    flex-basis: 100%;
+    margin: 20px 0;
+}
+
 .produto-page .produtos {
-    width: 70%;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
     justify-content: center
 }
 
@@ -74,7 +87,10 @@ nav a{
     border-radius: 10px;
     width: fit-content;
     background-color: #41304f;
-    filter: drop-shadow(0px 4px 2px #00000025);
+    box-shadow: 
+        inset 0 1px 0 0 #ffffff0d, 
+        2px 2px 5px 1px #00000048;
+    margin: 15px
 }
 
 
@@ -85,7 +101,6 @@ nav a{
 .produto-page .produto-info h2 {
     font-size: 1.5rem;
     margin: 10px 0 10px;
-    filter: drop-shadow(0px 4px 2px #00000025);
 
 }
 

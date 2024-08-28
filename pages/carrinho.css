@@ -1,35 +1,84 @@
 main{
-    margin-top: 30px;
+    margin: 50px 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 .content{
     display: flex;
-    gap: 350px;   
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: space-between;
 }
+
+.content > h2 {
+    font-size: 2.5rem;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.content > hr {
+    color: #FFFDEC;
+    flex-basis: 100%;
+    margin: 20px 0 40px ;
+}
+
 .produtos{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
 }
 .produto img{
     width: 200px;
     border-radius: 10px;
+    box-shadow: 
+        inset 0 1px 0 0 #ffffff0d, 
+        2px 2px 5px 0px #00000048;
 }
 .produto{
     display: flex;
-    align-items: start; 
-    gap: 15px;
+    align-items: start;
+    justify-content: space-between;
+    background-color: #41304F;
+    border-radius: 10px;
+    padding: 0px 20px 0 0;
+    box-shadow: 
+        inset 0 1px 0 0 #ffffff0d, 
+        2px 2px 5px 0px #00000048
 }
+
+.produto a {
+    display: flex;
+}
+
+.info-produto h3 {
+    font-size: 1.5rem;
+    width: 200px;
+}
+
+.info-produto, select {
+    margin: 20px 0;
+}
+
 .info-produto{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-self: normal;
-    
-
+    margin-left: 30px ;
 }
+
+select {
+    margin-left: 50px;
+    background-color: #5e4772;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: #FFFDEC;
+    border: none;
+    box-shadow: 
+        inset 0 1px 0 0 #ffffff0d, 
+        2px 2px 5px 0px #00000048;
+}
+
 .produto .info-produto a{
     color: #BD9DFF;
     text-decoration: none;
@@ -45,6 +94,10 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;  
+    box-shadow: 
+        inset 0 1px 0 0 #ffffff0d, 
+        2px 2px 5px 0px #00000048;
+    width: 450px;
 }
 .resumo a{
     background-color: #fffdec;
