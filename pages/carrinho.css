@@ -7,7 +7,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     width: 60%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .content > h2 {
@@ -22,6 +22,8 @@ main{
     margin: 20px 0 40px ;
 }
 
+
+
 .produtos{
     display: flex;
     flex-direction: column;
@@ -29,7 +31,7 @@ main{
 }
 .produto img{
     width: 200px;
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
     box-shadow: 
         inset 0 1px 0 0 #ffffff0d, 
         2px 2px 5px 0px #00000048;
@@ -50,9 +52,17 @@ main{
     display: flex;
 }
 
-.info-produto h3 {
-    font-size: 1.5rem;
+.titulo h3 {
+    font-size: 1.3rem;
     width: 200px;
+    
+}
+
+.titulo p{
+    font-weight: 300;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
 }
 
 .info-produto, select {
@@ -65,10 +75,11 @@ main{
     justify-content: space-between;
     align-self: normal;
     margin-left: 30px ;
+    width: 150px;
 }
 
 select {
-    margin-left: 50px;
+    margin-left: 15px;
     background-color: #5e4772;
     padding: 2px 5px;
     border-radius: 5px;
@@ -97,7 +108,7 @@ select {
     justify-content: space-between;  
     box-shadow: 
         inset 0 1px 0 0 #ffffff0d, 
-        2px 2px 5px 0px #00000048;
+        -1px 2px 5px 0px #00000048;
     width: 400px;
 }
 .resumo a{
@@ -109,21 +120,22 @@ select {
     transition: 0.3s ease;
 }
 .resumo a:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
     filter: drop-shadow(0px 0px 5px #fff59783);
 }
 
 dl {
     display: flex;
     justify-content: space-between;
+    letter-spacing: 0.5px;
 }
 
 .resumo-info {
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .resumo h2 {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -146,17 +158,7 @@ dl {
 
 /* Responsive */
 
-@media all and (max-width: 1650px) {
-    select {
-        margin-left: 15px;
-    }
-
-    .info-produto {
-        width: 150px;
-    }
-}
-
-@media all and (max-width: 1520px) {
+@media all and (max-width: 1580px) {
     .content {
         column-gap: 10px;
     }
@@ -193,6 +195,9 @@ dl {
     .info-produto {
         width: 200px;
     }
+    .content {
+        width: 330px;
+    }
 }
 
 @media all and (max-width: 400px){
@@ -203,4 +208,8 @@ dl {
     .info-produto {
         width: 150px;
     }
+    .content {
+        width: 250px;
+    }
+    
 }
