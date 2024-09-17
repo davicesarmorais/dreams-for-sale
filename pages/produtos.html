@@ -12,104 +12,131 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <title>Dreams for Sale</title>
+    <style>
+        .custom-shadow {
+          box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.05), 2px 2px 5px 1px rgba(0, 0, 0, 0.28);
+        }
+        .shine {
+            filter: drop-shadow(0px 0px 5px #fff59783);
+        }
+    </style>
 </head>
-<body>
+<body class="bg-[#33273F] text-[#FFFDEC] font-['Inter']">
     <!-- Nav -->
-    <nav>
-        <a href="../index.html" style="display: flex; gap: 10px; align-items: center;">
-            <span id="moon" class="material-symbols-outlined">dark_mode</span> 
-            <h1>Dreams for Sale</h1>
+    <nav class="custom-shadow flex justify-between m-3 mb-5 p-5 rounded-xl bg-[url('../imgs/background\(1920\).jpg')]">
+        <a class="duration-300 hover:drop-shadow-[0px_0px_5px_#fff59783] flex gap-2 items-center" href="../">
+            <span id="moon" class="material-symbols-outlined">dark_mode</span>
+            <h1 class="text-2xl font-bold">Dreams for Sale</h1>
         </a>
-        <div class="nav-links">
-            <a href="#">Produtos</a>
-            <a href="../index.html#Sobre">Sobre</a>
-            <a href="../index.html#Contato">Contato</a>
+        <div class="flex gap-10 mr-40 items-center">
+            <a class="duration-300 hover:drop-shadow-[0px_0px_5px_#fff59783]" href="./pages/produtos.html">Produtos</a>
+            <a class="duration-300 hover:drop-shadow-[0px_0px_5px_#fff59783]" href="#Sobre">Sobre</a>
+            <a class="duration-300 hover:drop-shadow-[0px_0px_5px_#fff59783]" href="#Contato">Contato</a>
         </div>
-        <a href="./carrinho.html"><span class="material-symbols-outlined">shopping_cart</span></a>
+        <a class='duration-300 hover:drop-shadow-[0px_0px_5px_#fff59783] flex items-center' href="./pages/carrinho.html"><span class="material-symbols-outlined">shopping_cart</span></a>
     </nav>
     <!-- Main -->
-    <div class="bg-white">
-      <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h2 class="sr-only">Products</h2>
+    <main>
+        <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+            <h2 class="text-2xl font-bold">Products</h2>
+            <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                <a href="./product/flying-car.html" class="group">
+                    <div
+                        class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                        <img src="../imgs/CarroVoador (400x400).png" alt=""
+                            class="h-full w-full object-cover object-center group-hover:opacity-75">
+                    </div>
+                    <h2 class="mt-4 text-sm text-gray-700">Flying Car</h2>
+                    <p>85 reviews</p>
+                    <p class="mt-1 text-lg font-medium text-gray-900">$48</p>
     
-        <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-          <a href="#" class="group">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-              <img src="../imgs/CarroVoador (400x400).png" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </a>
+                <a href="./product/dream-synth.html" class="group">
+                    <div
+                        class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                        <img src="../imgs/DreamSynth (400x400).png" alt=""
+                            class="h-full w-full object-cover object-center group-hover:opacity-75">
+                    </div>
+                    <h2 class="mt-4 text-sm text-gray-700">Dream Synth</h2>
+                    <p>85 reviews</p>
+                    <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+                </a>
+                <a href="./product/flavor-forge.html" class="group">
+                    <div
+                        class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                        <img src="../imgs/FlavorForge.png" alt=""
+                            class="h-full w-full object-cover object-center group-hover:opacity-75">
+                    </div>
+                    <h2 class="mt-4 text-sm text-gray-700">Flavor Forge</h2>
+                    <p>85 reviews</p>
+                    <p class="mt-1 text-lg font-medium text-gray-900">$89</p>
+                </a>
+                <a href="./product/flavor-forge.html" class="group">
+                    <div
+                        class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                        <img src="../imgs/HoverBoard.png" alt=""
+                            class="h-full w-full object-cover object-center group-hover:opacity-75">
+                    </div>
+                    <h2 class="mt-4 text-sm text-gray-700">Hoverboard</h2>
+                    <p>85 reviews</p>
+                    <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+                </a>
+                </a>
+                <a href="./product/quantum-key.html" class="group">
+                    <div
+                        class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                        <img src="../imgs/QuantumKey.png" alt=""
+                            class="h-full w-full object-cover object-center group-hover:opacity-75">
+                    </div>
+                    <h2 class="mt-4 text-sm text-gray-700">Quantum Key</h2>
+                    <p>85 reviews</p>
+                    <p class="mt-1 text-lg font-medium text-gray-900">$48</p>
+                </a>
+                <a href="./product/sentient.html" class="group">
+                    <div
+                        class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                        <img src="../imgs/Sentient.png" alt=""
+                            class="h-full w-full object-cover object-center group-hover:opacity-75">
+                    </div>
+                    <h2 class="mt-4 text-sm text-gray-700">Sentient</h2>
+                    <p>85 reviews</p>
+                    <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+                </a>
+                <a href="./product/smart-shoes.html" class="group">
+                    <div
+                        class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                        <img src="../imgs/SmartShoe.png" alt=""
+                            class="h-full w-full object-cover object-center group-hover:opacity-75">
+                    </div>
+                    <h2 class="mt-4 text-sm text-gray-700">Smart Shoes</h2>
+                    <p>85 reviews</p>
+                    <p class="mt-1 text-lg font-medium text-gray-900">$89</p>
+                </a>
+                <a href="./product/teleport-cube.html" class="group">
+                    <div
+                        class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                        <img src="../imgs/TeleportCube.png" alt=""
+                            class="h-full w-full object-cover object-center group-hover:opacity-75">
+                    </div>
+                    <h3 class="mt-4 text-sm text-gray-700">Teleport Cube</h3>
+                    <p>85 reviews</p>
+                    <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+                </a>
+                <a href="./product/time-capsule.html" class="group">
+                    <div
+                        class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                        <img src="../imgs/TimeCapsule_Watch.png" alt=""
+                            class="h-full w-full object-cover object-center group-hover:opacity-75">
+                    </div>
+                    <h3 class="mt-4 text-sm text-gray-700">Time Capsule</h3>
+                    <p>85 reviews</p>
+                    <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+                </a>
             </div>
-            <h2 class="mt-4 text-sm text-gray-700">Flying Car</h2>
-            <p>85 reviews</p>
-            <p class="mt-1 text-lg font-medium text-gray-900">$48</p>
-  
-          </a>
-          <a href="#" class="group">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-              <img src="../imgs/DreamSynth (400x400).png" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
-            </div>
-            <h2 class="mt-4 text-sm text-gray-700">Dream Synth</h2>
-            <p>85 reviews</p>
-            <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
-          </a>
-
-          <a href="#" class="group">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-              <img src="../imgs/FlavorForge.png" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
-            </div>
-            <h2 class="mt-4 text-sm text-gray-700">Flavor Forge</h2>
-            <p>85 reviews</p>
-            <p class="mt-1 text-lg font-medium text-gray-900">$89</p>
-          </a>
-          <a href="#" class="group">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-              <img src="../imgs/HoverBoard.png" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
-            </div>
-            <h2 class="mt-4 text-sm text-gray-700">Hoverboard</h2>
-            <p>85 reviews</p>
-            <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
-          </a>
-          </a>
-
-          <a href="#" class="group">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-              <img src="../imgs/QuantumKey.png" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
-            </div>
-            <h2 class="mt-4 text-sm text-gray-700">Quantum Key</h2>
-            <p>85 reviews</p>
-            <p class="mt-1 text-lg font-medium text-gray-900">$48</p>
-          </a>
-          <a href="#" class="group">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-              <img src="../imgs/Sentient.png" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
-            </div>
-            <h2 class="mt-4 text-sm text-gray-700">Sentient</h2>
-            <p>85 reviews</p>
-            <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
-          </a>
-          <a href="#" class="group">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-              <img src="../imgs/SmartShoe.png" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
-            </div>
-            <h2 class="mt-4 text-sm text-gray-700">Smart Shoes</h2>
-            <p>85 reviews</p>
-            <p class="mt-1 text-lg font-medium text-gray-900">$89</p>
-          </a>
-          <a href="#" class="group">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-              <img src="../imgs/TeleportCube.png" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
-            </div>
-            <h3 class="mt-4 text-sm text-gray-700">Teleport Cube</h3>
-            <p>85 reviews</p>
-            <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
-          </a>
-          <a href="#" class="group">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-              <img src="../imgs/TimeCapsule_Watch.png" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
-            </div>
-            <h3 class="mt-4 text-sm text-gray-700">Time Capsule</h3>
-            <p>85 reviews</p>
-            <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
-          </a>
-            <footer>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
         <div>
             <p>© 2024 Dreams for Sale, Inc. All rights reserved.</p>
             <p>+55 4002-8992</p>
