@@ -3,7 +3,7 @@
 
 Bem-vindo ao repositório do **Dreams for Sale** - um portal online onde os sonhos se tornam realidade. Este site oferece uma experiência única, onde produtos fantásticos e futuristas, que vivem na imaginação, são apresentados como itens disponíveis para compra.
 
-<a href="https://davicesarmorais.github.io/dreams-for-sale"><img style="border-radius: 10px; box-shadow: inset 0 1px 0 0 #ffffff0d, 2px 2px 5px 1px #00000048;" src="./preview.png"></a>
+<a href="https://davicesarmorais.github.io/dreams-for-sale"><img src="./preview.png"></a>
 
 ## Índice
 
@@ -20,6 +20,7 @@ Bem-vindo ao repositório do **Dreams for Sale** - um portal online onde os sonh
 
 - **Navegação intuitiva:** Menu de navegação simplificado com links para as páginas de produtos, sobre e contato.
 - **Produtos destacados:** Apresentação de produtos em promoção com imagens, descrições e preços.
+- **Contato:** Página para contato com a loja.
 - **Carrinho de Compras:** Funcionalidade para adicionar produtos ao carrinho.
 - **Sessão Sobre:** Descrição inspiradora da missão e visão do **Dreams for Sale**.
 - **Mapa de Localização:** Integração com Google Maps para mostrar a localização da loja.
