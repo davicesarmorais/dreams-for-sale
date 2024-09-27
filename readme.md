@@ -2,6 +2,8 @@
 
 Bem-vindo ao repositório do **Dreams for Sale** - um portal online onde os sonhos se tornam realidade. Este site oferece uma experiência única, onde produtos fantásticos e futuristas, que vivem na imaginação, são apresentados como itens disponíveis para compra.
 
+<a href="https://davicesarmorais.github.io/dreams-for-sale"><img src="./preview.png"></a>
+
 ## Índice
 
 - [Visão Geral](#visão-geral)
@@ -26,13 +28,14 @@ Bem-vindo ao repositório do **Dreams for Sale** - um portal online onde os sonh
 
 ```plaintext
 /
+├── css /                       # Estilos (css) usados 
 ├── imgs/                       # Imagens usadas no site
 ├── pages/                      # Páginas internas
+│   ├── carrinho.html
 │   ├── produtos.html
 │   ├── product/
 │   │   ├── dream-synth.html
 │   │   ├── flying-car.html
-├── style.css                   # Arquivo de estilos principal
 ├── index.html                  # Página principal do site
 ```
 
