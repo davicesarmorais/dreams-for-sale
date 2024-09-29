@@ -106,7 +106,7 @@
                     <div class="flex h-6 items-center">
                         <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
                         <button type="button"
-                            class="flex w-8 flex-none cursor-pointer rounded-full bg-gray-200 p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                            class="flex w-8 flex-none cursor-pointer rounded-full bg-gray-200 p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#BD9DFF]"
                             role="switch" aria-checked="false" aria-labelledby="switch-1-label">
                             <span class="sr-only">Agree to policies</span>
                             <!-- Enabled: "translate-x-3.5", Not Enabled: "translate-x-0" -->
@@ -136,5 +136,28 @@
         </div>
         <p class="text-xs">Feito com <a class="duration-300 underline hover:drop-shadow-[0px_0px_5px_#fff59783]" href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a></p>
     </footer>
+    <script>
+        // Código do ChatGPT para o botão do switch funcionar
+        const switchButton = document.querySelector('button[role="switch"]');
+        const innerSpan = switchButton.querySelector('span[aria-hidden="true"]');
+
+        switchButton.addEventListener('click', () => {
+            const isChecked = switchButton.getAttribute('aria-checked') === 'true';
+            
+            if (isChecked) {
+                switchButton.setAttribute('aria-checked', 'false');
+                switchButton.classList.remove('bg-[#BD9DFF]');
+                switchButton.classList.add('bg-gray-200');
+                innerSpan.classList.remove('translate-x-3.5');
+                innerSpan.classList.add('translate-x-0');
+            } else {
+                switchButton.setAttribute('aria-checked', 'true');
+                switchButton.classList.remove('bg-gray-200');
+                switchButton.classList.add('bg-[#BD9DFF]');
+                innerSpan.classList.remove('translate-x-0');
+                innerSpan.classList.add('translate-x-3.5');
+            }
+        });
+    </script>
 </body>
 </html>
